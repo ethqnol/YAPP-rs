@@ -1,5 +1,25 @@
 .navbar {
-  background-color: #333;
-  color: #fff;
-  padding: 15px 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(1rem);
+  
+  box-shadow: 0 0.2rem 1rem rgba(0,0,0,0.5);
+
+  display: flex;
+
+  width: 100vw;
+  height: 5vh;
+  padding: 1rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.navbar a {
+  flex: 2 1 auto;
+  color: sandybrown;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
 }
