@@ -4,13 +4,20 @@
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
+use stylers::style_sheet_str;
 
+use crate::pages::HomePage;
 
 #[component]
 pub fn Nav() -> impl IntoView {
-    view! { class="navbar",
+    let (class_name, style_val) = style_sheet_str!("src/components/styles/nav.css");
+    view! { class=class_name,
+        <style>{style_val}</style>
         
-        <h1> Hi!!! </h1>
+        <nav class="navbar">
+            <a href="/">"Home"</a>
+            <a href="/contacts">"Contacts"</a>
+        </nav>
         
     }
 }
