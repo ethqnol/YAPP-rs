@@ -10,13 +10,13 @@ pub fn HomePage() -> impl IntoView {
     
     
     view! { class=class_name,
+        <Nav/>
         <style>{style_val}</style>
         
+       
         
-        
-        <Nav/>
-        
-        <h1 class="hi" >"Welcome to Leptos!"</h1>
+        <h1 class="greeting" >"Welcome to YAPP"</h1>
+        <h1 class="get-started" >"Get Started"</h1>
         <button on:click=on_click>"Click Me: " {count}</button>
     }
 }
