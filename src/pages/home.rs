@@ -1,6 +1,6 @@
 use leptos::*;
 use stylers::style_sheet_str;
-use crate::components::Nav;
+use crate::components::*;
 
 #[component]
 pub fn HomePage() -> impl IntoView {
@@ -10,13 +10,45 @@ pub fn HomePage() -> impl IntoView {
     
     
     view! { class=class_name,
+        
+        
         <Nav/>
+
+        
         <style>{style_val}</style>
         
-       
+        <Sidebar/>
+        <div class="content-container"> 
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <h1 class="greeting" >"Welcome to YAPP"</h1>
+            <h1 class="get-started" >"Get Started"</h1>
+            <button on:click=on_click>"Click Me: " {count}</button>
+        </div>
+
         
-        <h1 class="greeting" >"Welcome to YAPP"</h1>
-        <h1 class="get-started" >"Get Started"</h1>
-        <button on:click=on_click>"Click Me: " {count}</button>
+
     }
 }
