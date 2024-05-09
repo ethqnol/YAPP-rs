@@ -15,8 +15,13 @@ pub fn Nav() -> impl IntoView {
         <style>{style_val}</style>
         
         <nav class="navbar">
-            <a href="/">"Home"</a>
-            <a href="/contacts">"Contacts"</a>
+            <h2 class="website-name"> YAPP (Yet Another Paper Planner) </h2>
+            
+            <div class="main-navigation"> 
+                <a href="/">"Home"</a>
+                <a href="/project">"Project"</a>
+            </div>
+
         </nav>
         
     }
