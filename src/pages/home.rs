@@ -10,7 +10,6 @@ pub fn HomePage() -> impl IntoView {
     view! { class=class_name,
         
         
-        <Nav/>
         <style>{style_val}</style> 
         //<img src="/assets/prudential.png" />
         <div class="bg-image"> </div>

@@ -15,7 +15,7 @@ pub fn Nav() -> impl IntoView {
         <style>{style_val}</style>
         
         <nav class="navbar">
-            <h2 class="website-name"> YAPP (Yet Another Paper Planner) </h2>
+            <h2 class="website-name"> Yet Another Paper Planner </h2>
             
             <div class="main-navigation"> 
                 <a href="/">"Home"</a>

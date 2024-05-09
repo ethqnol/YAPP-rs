@@ -4,6 +4,7 @@ use leptos_router::*;
 
 
 use crate::pages::*;
+use crate::components::*;
 
 #[component]
 pub fn App() -> impl IntoView {
@@ -16,17 +17,20 @@ pub fn App() -> impl IntoView {
         <Stylesheet id="leptos" href="/pkg/yapp.css"/>
 
         // sets the document title
-        <Title text="Welcome to Leptos"/>
+        <Title text="YAPP"/>
 
         // content for this welcome page
         <Router>
             <main>
                 <Routes>
                     <Route path="" view=HomePage/>
+                    <Route path="/project" view=Project/>
                     <Route path="/*any" view=NotFound/>
                 </Routes>
             </main>
         </Router>
+        
+        <Nav />
     }
 }
 
