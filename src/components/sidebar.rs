@@ -15,9 +15,10 @@ pub fn Sidebar() -> impl IntoView {
         <style>{style_val}</style>
         
         <div class="sidenav">
-            <a href="/">"Home"</a>
-            <a href="/contacts">"Contacts"</a>
+            <a href="/">"Progress"</a>
+            <a href="/">"To Do"</a>
+            <a href="/contacts">"Sources"</a>
+            <a href="/contacts">"Notecards"</a>
         </div>
-        
     }
 }
