@@ -26,3 +26,4 @@ pub fn Nav() -> impl IntoView {
         
     }
 }
+
